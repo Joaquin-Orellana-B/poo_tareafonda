@@ -56,7 +56,10 @@ public abstract class Bebida {
     public abstract String obtenerDetalle();
 
     @Override
-    public String toString(){
-        return nombre + volumenML + stock;
+    public String toString() {
+        return "--- Detalle del Producto ---\n" +
+                "Nombre: " + nombre + "\n" +
+                "Volumen: " + volumenML + " ml\n" +
+                "Stock disponible: " + stock;
     }
 }
